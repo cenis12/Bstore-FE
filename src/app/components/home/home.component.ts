@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductService} from "../../services/product.service";
 import {ProductModelServer, serverResponse} from "../../models/product.model";
 import {Router} from "@angular/router";
-import {CartService} from "../../services/cart.service";
+
 //import {CartService} from "../../services/cart.service";
 
 @Component({
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
 
   constructor(private productService: ProductService,
-              private cartService: CartService,
+
               private router: Router) { }
 
   ngOnInit(): void {
@@ -54,9 +54,9 @@ export class HomeComponent implements OnInit {
     }*/
 
 
-  AddToCart(id: number) {
+  /*AddToCart(id: number) {
     this.cartService.AddProductToCart(id);
-  }
+  }*/
 }
 
 

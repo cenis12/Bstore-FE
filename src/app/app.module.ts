@@ -15,7 +15,7 @@ import {ProductService} from "./services/product.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NgxSpinnerModule} from "ngx-spinner";
 import {ToastrModule} from "ngx-toastr";
-import {CartService} from "./services/cart.service";
+
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import {CartService} from "./services/cart.service";
     ToastrModule.forRoot()
   ],
   providers: [ProductService,
-              CartService
+
               ],
   bootstrap: [AppComponent]
 })
